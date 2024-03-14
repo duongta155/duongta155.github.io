@@ -14,15 +14,20 @@
       ul.col {
           list-style: none;
           padding: 0;
+          margin: 0;
       }
       ul.col li {
           display: flex;
-          align-items: center; /* This ensures vertical centering of icon with the text */
+          align-items: center; /* Vertically centers the icon with the text */
+          justify-content: flex-start; /* Aligns the content to the left */
       }
       ul.col li i.fa {
-          margin-right: 8px; /* Adjust space between icon and text */
+          margin-right: 8px; /* Adjusts space between icon and text */
       }
-    </style>
+      ul.col li b {
+          margin-left: 8px; /* Optional: Adds space between the icon and bold text for better readability */
+      }
+  </style>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -120,12 +125,12 @@
                   <li style="list-style: none;"><i class="fa fa-fire">&emsp;Responsible and enthusiastic working spirit</i></li>
                   <li style="list-style: none;"><i class="fa fa-comments">&emsp;Positive and great teamwork skill</i></li>
                   <li style="list-style: none;"><i class="fa fa-magic">&emsp;Quick-minded and good problem-solving</i></li> -->
-                  <li style="list-style: none;"><i class="fa fa-book">&emsp;<b>Large Language Models</b></i>&nbsp;I am presently conducting research at the <span href="https://coral-lab.umbc.edu/">Coral Lab</span> 
+                  <li style="list-style: none;"><i class="fa fa-book">&emsp;<b>Large Language Models</b>&nbsp;I am presently conducting research at the <span href="https://coral-lab.umbc.edu/">Coral Lab</span> 
                     , which is supervised by <span href="https://www.csee.umbc.edu/people/faculty/tim-oates/">Dr. Tim Oates</span>, a Professor of Computer Science and Electrical Engineering 
                     at the University of Maryland, Baltimore County. My specific area of focus involves enhancing the reasoning abilities 
-                    of large language models through auto-metacognitive prompting, with the goal of improving understanding in these models.</li>
-                  <li style="list-style: none;"><i class="fa fa-book">&emsp;<b>Natural Language Processing</b></i>&nbsp; During my job at CMC Institute of Technology, I 
-                    have a chance to work on </li>
+                    of large language models through auto-metacognitive prompting, with the goal of improving understanding in these models.</i></li>
+                  <li style="list-style: none;"><i class="fa fa-book">&emsp;<b>Natural Language Processing</b>&nbsp; During my job at CMC Institute of Technology, I 
+                    have a chance to work on</i></li>
                   <li style="list-style: none;"><i class="fa fa-book">&emsp;<b>Knowledge Graph</b></i></li>
               </ul>
             </div>
