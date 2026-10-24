@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tạ Tùng Dương | Nghiên cứu sinh Tiến sĩ Khoa học Máy tính, UMBC</title>
+  <meta name="description" content="Tạ Tùng Dương, nghiên cứu sinh Tiến sĩ Khoa học Máy tính tại UMBC. Nghiên cứu nhận dạng chữ viết tay tiếng Việt, mô hình thị giác–ngôn ngữ, học tổ hợp sâu, sinh báo cáo CT 3D và suy luận toán học của mô hình ngôn ngữ lớn.">
+  <meta name="author" content="Tạ Tùng Dương">
+  <meta property="og:title" content="Tạ Tùng Dương | Nghiên cứu sinh Tiến sĩ Khoa học Máy tính, UMBC">
+  <meta property="og:description" content="Mô hình thị giác–ngôn ngữ, suy luận của LLM và AI y tế. Tốt nghiệp tháng 12/2026.">
+  <meta property="og:image" content="https://duongta155.github.io/assets/img/profile.jpg">
+  <meta property="og:url" content="https://duongta155.github.io/vi/">
+  <meta property="og:locale" content="vi_VN">
+  <link rel="alternate" hreflang="en" href="https://duongta155.github.io/">
+  <link rel="alternate" hreflang="vi" href="https://duongta155.github.io/vi/">
+  <link rel="alternate" hreflang="x-default" href="https://duongta155.github.io/">
+  <link rel="icon" href="../assets/img/profile.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap&subset=vietnamese" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/main.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Tạ Tùng Dương",
+    "alternateName": ["Tung Duong Ta", "Duong Ta"],
+    "jobTitle": "Nghiên cứu sinh Tiến sĩ Khoa học Máy tính",
+    "affiliation": {"@type": "CollegeOrUniversity", "name": "University of Maryland, Baltimore County"},
+    "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Villanova University"}],
+    "email": "mailto:dta1@umbc.edu",
+    "url": "https://duongta155.github.io/vi/",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=CQvMpEsAAAAJ",
+      "https://github.com/duongta155",
+      "https://www.linkedin.com/in/duong-ta-16a631162/"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- SVG icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></symbol>
+  <symbol id="i-scholar" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 1 9l4 2.2V17c0 .5.3 1 .8 1.2C7.6 19.3 9.7 20 12 20s4.4-.7 6.2-1.8c.5-.2.8-.7.8-1.2v-5.8L21 10v6h2V9L12 3Zm0 2.3L19.2 9 12 12.7 4.8 9 12 5.3Zm5 11.1c-1.4.8-3.1 1.3-5 1.3s-3.6-.5-5-1.3v-4.1l5 2.7 5-2.7v4.1Z"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2ZM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2Zm1.8 13.1H3.5V9h3.6v11.5ZM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+</svg>
+
+<nav class="nav" aria-label="Điều hướng chính">
+  <div class="wrap">
+    <a class="brand" href="#top">Tạ Tùng Dương</a>
+    <ul class="nav-links">
+      <li><a href="#about">Giới thiệu</a></li>
+      <li><a href="#news">Tin tức</a></li>
+      <li><a href="#publications">Công bố</a></li>
+      <li><a href="#research">Nghiên cứu</a></li>
+      <li><a href="#experience">Kinh nghiệm</a></li>
+      <li><a href="#education">Học vấn</a></li>
+      <li><a href="#honors">Giải thưởng</a></li>
+      <li><a href="#credentials">Văn bằng</a></li>
+      <li><a href="../assets/cv/Tung_Duong_Ta_CV.pdf" target="_blank" rel="noopener">CV</a></li>
+    </ul>
+    <button class="icon-btn menu-btn" id="menu-toggle" aria-label="Mở menu" aria-expanded="false"><svg><use href="#i-menu"/></svg></button>
+    <a class="icon-btn lang-btn" href="../" hreflang="en" lang="en" title="View in English" aria-label="View in English">EN</a>
+    <button class="icon-btn" id="theme-toggle" aria-label="Chuyển chế độ sáng/tối"><svg><use href="#i-moon"/></svg></button>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <header class="hero">
+    <div class="wrap">
+      <img class="avatar" src="../assets/img/profile.jpg" alt="Ảnh chân dung Tạ Tùng Dương" width="220" height="220">
+      <div>
+        <div class="status"><span class="dot"></span>Tốt nghiệp tháng 12/2026 · Sẵn sàng cho vị trí nghiên cứu &amp; ML từ đầu năm 2027</div>
+        <h1>Tạ Tùng Dương</h1>
+        <p class="role">Nghiên cứu sinh Tiến sĩ Khoa học Máy tính · CoRaL Lab, Đại học Maryland, Baltimore County (UMBC)</p>
+        <p class="lead">Tôi xây dựng các hệ thống AI đọc những thứ khó đọc: chữ viết tay tiếng Việt, ảnh chụp CT 3D và các bài toán nhiều bước.</p>
+        <div class="links">
+          <a class="btn primary" href="../assets/cv/Tung_Duong_Ta_CV.pdf" target="_blank" rel="noopener"><svg><use href="#i-file"/></svg>CV (PDF, tiếng Anh)</a>
+          <a class="btn" href="https://scholar.google.com/citations?user=CQvMpEsAAAAJ&amp;hl=vi" target="_blank" rel="noopener"><svg><use href="#i-scholar"/></svg>Google Scholar</a>
+          <a class="btn" href="https://github.com/duongta155" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/duong-ta-16a631162/" target="_blank" rel="noopener"><svg><use href="#i-linkedin"/></svg>LinkedIn</a>
+          <a class="btn" href="mailto:dta1@umbc.edu"><svg><use href="#i-mail"/></svg>dta1@umbc.edu</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= GIỚI THIỆU ================= -->
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head"><h2>Giới thiệu</h2></div>
+      <div class="grid-2">
+        <div>
+          <p>Tôi là nghiên cứu sinh Tiến sĩ Khoa học Máy tính tại <a href="https://www.csee.umbc.edu/" target="_blank" rel="noopener">Đại học Maryland, Baltimore County (UMBC)</a>, dưới sự hướng dẫn của <a href="https://www.csee.umbc.edu/people/tenure-track-faculty/tim-oates/" target="_blank" rel="noopener">GS. Tim Oates</a> tại CoRaL Lab. Tôi được công nhận là ứng viên tiến sĩ (Ph.D. candidate) vào tháng 2/2026 và sẽ tốt nghiệp ngày 18/12/2026 (GPA 3,933/4,0).</p>
+          <p>Luận án của tôi nghiên cứu <strong>nhận dạng chữ viết tay tiếng Việt trong điều kiện ít dữ liệu</strong>: một bộ dữ liệu ba cấp độ mới và một kiến trúc đa nhánh có hợp nhất, được tổng quát hóa sang <strong>sinh báo cáo ảnh CT 3D</strong> và <strong>suy luận toán học</strong> của các mô hình ngôn ngữ lớn.</p>
+          <p>Trước khi học tiến sĩ, tôi là Kỹ sư Dữ liệu lớn tại Tập đoàn CMC (Hà Nội), nơi tôi xây dựng hệ thống tìm kiếm trên đồ thị tri thức và tinh chỉnh các mô hình BERT cho nhận dạng thực thể (NER) và chuyển câu hỏi tiếng Việt sang SQL. Tôi tốt nghiệp Cử nhân Khoa học Máy tính hạng Magna Cum Laude tại Đại học Villanova.</p>
+          <p>Tôi đang tìm kiếm các vị trí toàn thời gian <strong>Nhà khoa học nghiên cứu AI, Nhà khoa học ứng dụng và Kỹ sư Học máy</strong> bắt đầu từ đầu năm 2027, tại Hoa Kỳ hoặc Việt Nam.</p>
+        </div>
+        <div class="card">
+          <h3>Hướng nghiên cứu</h3>
+          <div class="chips">
+            <span class="chip">Nhận dạng chữ viết tay tiếng Việt</span>
+            <span class="chip">Mô hình thị giác–ngôn ngữ (VLM)</span>
+            <span class="chip">Dữ liệu nét bút (stroke)</span>
+            <span class="chip">Học tổ hợp sâu (deep ensembles)</span>
+            <span class="chip">Sinh báo cáo CT 3D</span>
+            <span class="chip">Suy luận toán học của LLM</span>
+            <span class="chip">Dự đoán kết cục bệnh nhân ICU</span>
+            <span class="chip">Đồ thị tri thức</span>
+          </div>
+          <h3 style="margin-top:18px">Luận án</h3>
+          <p class="small">“Low-Resource Vietnamese Handwriting Recognition: A Three-Level Dataset and a Multi-Path Architecture with Fusion Generalized to Computed Tomography Report Generation and Mathematical Reasoning”</p>
+          <p class="small muted">Người hướng dẫn: GS. Tim Oates · Hội đồng: TS. Lara Martin, TS. Justin Brooks, TS. Manas Gaur, TS. Trung Vu</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TIN TỨC ================= -->
+  <section id="news">
+    <div class="wrap">
+      <div class="sec-head"><h2>Tin tức</h2></div>
+      <ul class="news">
+        <li><time>12/2026</time><span>Bảo vệ luận án và tốt nghiệp Tiến sĩ tại UMBC (dự kiến ngày 18/12/2026).</span></li>
+        <li><time>Thu 2026</time><span>Bài báo <strong>MDEF</strong> được chấp nhận (regular paper) tại Workshop LLM4MDF thuộc hội nghị <strong>IEEE ICDM 2026</strong> (CORE A*). <a href="https://github.com/duongta155/MDEF" target="_blank" rel="noopener">Mã nguồn</a></span></li>
+        <li><time>Thu 2026</time><span>Nộp bài <strong>ViTLD</strong> tới WACV 2027 và <strong>PIKE</strong> tới AAAI 2027.</span></li>
+        <li><time>Thu 2026</time><span>Bắt đầu làm trợ giảng chấm bài (Grader) môn Software Engineering I tại UMBC.</span></li>
+        <li><time>09/2026</time><span>Bài báo <strong>MDToC</strong> được đăng trên <a href="https://ictmag.ictvietnam.vn/ict/issue/view/109/33" target="_blank" rel="noopener">Tạp chí Nghiên cứu, Phát triển và Ứng dụng Công nghệ Thông tin và Truyền thông (ICT Research), Vol. 2026, No. 2</a>.</span></li>
+        <li><time>05/2026</time><span>Nhận bằng Thạc sĩ Khoa học Máy tính của UMBC trong quá trình học tiến sĩ.</span></li>
+        <li><time>02/2026</time><span>Được công nhận là ứng viên tiến sĩ (Ph.D. candidacy).</span></li>
+        <li><time>12/2025</time><span>Bản preprint MDToC được công bố trên <a href="https://arxiv.org/abs/2512.18841" target="_blank" rel="noopener">arXiv:2512.18841</a>.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= CÔNG BỐ ================= -->
+  <section id="publications">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Công bố khoa học</h2>
+        <span class="aside">Danh sách đầy đủ trên <a href="https://scholar.google.com/citations?user=CQvMpEsAAAAJ&amp;hl=vi" target="_blank" rel="noopener">Google Scholar</a></span>
+      </div>
+
+      <div class="pub-group">
+        <h3>Bài báo hội nghị &amp; workshop</h3>
+        <article class="pub">
+          <div class="key">[C1]</div>
+          <div>
+            <div class="title">MDEF: Multi-Report Deep Ensemble Fusion for 3D CT Report Generation</div>
+            <div class="authors"><span class="me">Tung Duong Ta</span>, Tim Oates, Manas Gaur, Trong-Nghia Nguyen, Tien-Cuong Nguyen, Tuan-Cuong Vuong, Trang Xuan Mai, Thien Van Luong</div>
+            <div class="venue"><span class="badge b-ok">Đã chấp nhận</span>Workshop on Large Language Models for Multimodal Data Fusion (LLM4MDF) tại IEEE International Conference on Data Mining (ICDM 2026, CORE A*). Regular paper.</div>
+            <div class="plinks"><a href="https://github.com/duongta155/MDEF" target="_blank" rel="noopener">Mã nguồn</a></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="pub-group">
+        <h3>Bài báo tạp chí</h3>
+        <article class="pub">
+          <div class="key">[J1]</div>
+          <div>
+            <div class="title">MDToC: Metacognitive Dynamic Tree of Concepts for Boosting Mathematical Problem-Solving of Large Language Models</div>
+            <div class="authors"><span class="me">Tung Duong Ta</span>, Tim Oates, Thien Van Luong, Huan Vu, Tien Cuong Nguyen</div>
+            <div class="venue"><span class="badge b-ok">Đã xuất bản</span>Journal on Information Technologies &amp; Communications (ICT Research), Vol. 28, No. 2 (Vol. 2026, No. 2), tr. 59–68, tháng 9/2026. DOI: 10.31276/ICT.2026.0056</div>
+            <div class="plinks">
+              <a href="https://ictmag.ictvietnam.vn/ict/issue/view/109/33" target="_blank" rel="noopener">Bài báo (tạp chí, tr. 59–68)</a>
+              <a href="https://arxiv.org/abs/2512.18841" target="_blank" rel="noopener">arXiv</a>
+              <a href="https://github.com/duongta155/MDToC" target="_blank" rel="noopener">Mã nguồn</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="pub-group">
+        <h3>Đang phản biện</h3>
+        <article class="pub">
+          <div class="key">[R1]</div>
+          <div>
+            <div class="title">ViTLD: A Three-Level Vietnamese Handwriting Dataset from Photographed Pages</div>
+            <div class="authors"><span class="me">Tung Duong Ta</span>, Thai Dang Tran, The-Son Le, Quang Dang, Trung Vu, Manas Gaur, Tim Oates</div>
+            <div class="venue"><span class="badge b-acc">Đang phản biện</span>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2027).</div>
+          </div>
+        </article>
+        <article class="pub">
+          <div class="key">[R2]</div>
+          <div>
+            <div class="title">PIKE: Patient-Context Informed Knowledge Graph Enrichment for ICU Outcome Prediction</div>
+            <div class="authors">Tuan-Cuong Vuong, Trang Mai Xuan, Son Thai Mai, <span class="me">Tung Duong Ta</span>, Cuong Tien Nguyen, Huan Vu, Vu-Duc Ngo, Thien Van Luong</div>
+            <div class="venue"><span class="badge b-acc">Đang phản biện</span>AAAI Conference on Artificial Intelligence (AAAI 2027).</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="pub-group">
+        <h3>Đang chỉnh sửa</h3>
+        <article class="pub">
+          <div class="key">[P1]</div>
+          <div>
+            <div class="title">SIME: A Stroke-Image Modality Ensemble in Word-Level Vietnamese Handwriting Recognition</div>
+            <div class="authors"><span class="me">Tung Duong Ta</span>, Thai Dang Tran, The-Son Le, Quang Dang, Trung Vu, Manas Gaur, Tim Oates</div>
+            <div class="venue"><span class="badge b-warn">Đang chỉnh sửa</span>Đang chỉnh sửa để nộp lại.</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NGHIÊN CỨU ================= -->
+  <section id="research">
+    <div class="wrap">
+      <div class="sec-head"><h2>Dự án nghiên cứu</h2><span class="aside">CoRaL Lab, UMBC · 2023 đến nay</span></div>
+      <div class="projects">
+        <article class="card project">
+          <h3>MDEF: Hợp nhất tổ hợp sâu đa báo cáo</h3>
+          <div class="meta">Sinh báo cáo CT 3D · Tác giả chính · Workshop ICDM 2026</div>
+          <ul>
+            <li>Chuyển mô hình sinh một báo cáo duy nhất cho ảnh CT 3D thành tổ hợp sâu sinh nhiều báo cáo.</li>
+            <li>Vượt MARCH, phương pháp sinh một báo cáo tốt nhất, +0,079 và +0,045 CE F1 trên RadGenome và CT-RATE, và nhỉnh hơn trên INSPECT.</li>
+            <li>Tăng độ phủ (recall) 70% đến 97% so với MARCH, tính trung bình trên 18 bệnh lý.</li>
+          </ul>
+          <div class="plinks"><a class="btn" href="https://github.com/duongta155/MDEF" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>Mã nguồn</a></div>
+        </article>
+
+        <article class="card project">
+          <h3>MDToC: Cây khái niệm động siêu nhận thức</h3>
+          <div class="meta">Suy luận toán học của LLM · Tác giả chính · ICT Research</div>
+          <ul>
+            <li>Kỹ thuật prompting ba giai đoạn dựa trên các bước siêu nhận thức: lập kế hoạch, giám sát và rà soát.</li>
+            <li>Vượt Graph of Thoughts 5% trên CHAMP, 5,4% trên MATH và 4% trên Game of 24.</li>
+            <li>Vượt Tree of Thoughts tới 19% và Graph of Thoughts tới 13% trên các mô hình nền khác nhau.</li>
+          </ul>
+          <div class="plinks">
+            <a class="btn" href="https://ictmag.ictvietnam.vn/ict/issue/view/109/33" target="_blank" rel="noopener"><svg><use href="#i-file"/></svg>Bài báo</a>
+            <a class="btn" href="https://github.com/duongta155/MDToC" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>Mã nguồn</a>
+            <a class="btn" href="https://arxiv.org/abs/2512.18841" target="_blank" rel="noopener"><svg><use href="#i-file"/></svg>arXiv</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <h3>ViTLD: Bộ dữ liệu chữ viết tay tiếng Việt ba cấp độ</h3>
+          <div class="meta">Bộ dữ liệu · Tác giả chính · Đang phản biện tại WACV 2027</div>
+          <ul>
+            <li>Gồm 565 trang giấy chụp ảnh của 435 người viết: bộ dữ liệu chữ viết tay tiếng Việt đầu tiên có nhãn cấp từ, dòng và đoạn trên trang giấy chụp ảnh.</li>
+            <li>Khó hơn VNOnDB và UIT-HWDB: CER trung bình cấp từ của chín hệ nhận dạng tăng lên 12,56 (so với 7,32 và 9,39).</li>
+            <li>Khó hơn ở cấp dòng: CER trung bình 22,57, so với 14,09 trên VNOnDB và 16,91 trên UIT-HWDB.</li>
+          </ul>
+        </article>
+
+        <article class="card project">
+          <h3>SIME: Tổ hợp hai phương thức nét bút và ảnh</h3>
+          <div class="meta">Nhận dạng chữ viết tay bằng VLM · Tác giả chính · Đang chỉnh sửa</div>
+          <ul>
+            <li>Bổ sung phương thức nét bút, được tái tạo từ ảnh bằng kỹ thuật stroke derendering, vào tổ hợp các mô hình thị giác–ngôn ngữ đã tinh chỉnh.</li>
+            <li>Vượt tổ hợp chỉ dùng ảnh mạnh nhất trên hai bộ kiểm thử ngoài phân phối, giảm CER khoảng 11% trên VN-Para và 9% trên VN-Addr.</li>
+            <li>Công bố VN-Para, bộ đánh giá cấp từ giàu dấu thanh gồm 8.042 ảnh từ viết tay từ 100 văn bản.</li>
+          </ul>
+        </article>
+
+        <article class="card project">
+          <h3>PIKE: Làm giàu đồ thị tri thức cho dự đoán ICU</h3>
+          <div class="meta">AI y tế · Đồng tác giả · Đang phản biện tại AAAI 2027</div>
+          <ul>
+            <li>Xây dựng trên Evidence-Guided Node Selection (EGNS) và Bidirectional Low-Rank Fusion (BLRF).</li>
+            <li>Vượt phương pháp cơ sở mạnh nhất 2,2 đến 4,0 điểm AUROC ở mọi thiết lập trên MIMIC-III và MIMIC-IV.</li>
+            <li>Cải thiện AUPRC tới 6,9 điểm so với CTPD trên bài toán tử vong MIMIC-IV.</li>
+          </ul>
+        </article>
+
+        <article class="card project">
+          <h3>Công cụ sử dụng trong các dự án</h3>
+          <div class="meta">Công cụ và mô hình</div>
+          <div class="chips">
+            <span class="chip">PyTorch</span><span class="chip">Hugging Face Transformers</span><span class="chip">PEFT / LoRA</span>
+            <span class="chip">Qwen2.5-VL</span><span class="chip">InternVL3</span><span class="chip">TrOCR</span><span class="chip">RadBERT</span>
+            <span class="chip">GPT-4-Turbo</span><span class="chip">MONAI</span><span class="chip">OpenCV</span><span class="chip">Cụm đa GPU SLURM</span>
+            <span class="chip">Huấn luyện phân tán</span>
+          </div>
+        </article>
+      </div>
+
+      <h3 style="margin-top:32px">Các dự án trước đây</h3>
+      <div class="earlier">
+        <div class="card">
+          <img src="../assets/img/projects/LLM_Generated_Prompt_Revised.png" alt="Sơ đồ prompt siêu nhận thức do LLM sinh ra" loading="lazy">
+          <div><strong>Prompting siêu nhận thức tự động</strong><span class="muted small"> · UMBC, 2023</span>
+            <p>Dùng GPT-3.5-turbo sinh prompt siêu nhận thức để giải và đánh giá từng bước lời giải toán và logic, cải thiện so với mô hình cơ sở của benchmark FELM. Công trình này phát triển thành MDToC.</p></div>
+        </div>
+        <div class="card">
+          <img src="../assets/img/projects/Hierarchical_RL.png" alt="Sơ đồ học tăng cường phân cấp" loading="lazy">
+          <div><strong>Học tăng cường phân cấp đa tác tử</strong><span class="muted small"> · Nghiên cứu hè tại UMBC</span>
+            <p>Khảo sát 15 bài báo về học tăng cường đa tác tử và trên đồ thị, xây dựng mô hình học tăng cường sâu cho bài toán lập lịch nhiều công việc.</p></div>
+        </div>
+        <div class="card">
+          <img src="../assets/img/projects/Similar_Searching.png" alt="Tìm kiếm doanh nghiệp tương tự trên đồ thị tri thức" loading="lazy">
+          <div><strong>Tìm kiếm doanh nghiệp tương tự</strong><span class="muted small"> · Tập đoàn CMC</span>
+            <p>Biểu diễn đồ thị tri thức (TransE, ComplEx) kết hợp Random Walk with Restart và tìm kiếm HNSW / ScaNN cho sản phẩm gợi ý B2B.</p></div>
+        </div>
+        <div class="card">
+          <img src="../assets/img/projects/NLP2SQL.jpg" alt="Chuyển ngôn ngữ tự nhiên sang SQL" loading="lazy">
+          <div><strong>Chuyển câu hỏi tiếng Việt sang SQL</strong><span class="muted small"> · Tập đoàn CMC</span>
+            <p>Xây dựng bộ dữ liệu giao dịch tiếng Việt và tinh chỉnh các mô hình BERT đa ngôn ngữ / RAT-SQL cho text-to-SQL thời gian thực (độ chính xác 78%).</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= KINH NGHIỆM ================= -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="sec-head"><h2>Kinh nghiệm</h2></div>
+      <ol class="timeline">
+        <li class="tl-item">
+          <div class="tl-head"><h3>Trợ lý nghiên cứu sau đại học</h3><span class="when">01/2023 – nay</span></div>
+          <div class="tl-org">CoRaL Lab, Đại học Maryland, Baltimore County · Baltimore, MD · Người hướng dẫn: GS. Tim Oates</div>
+          <ul>
+            <li>Nghiên cứu về mô hình thị giác–ngôn ngữ, học tổ hợp sâu, suy luận của LLM và AI y tế.</li>
+            <li>Tác giả chính của MDEF, MDToC, ViTLD và SIME; đồng tác giả PIKE (xem <a href="#research">Nghiên cứu</a>).</li>
+          </ul>
+        </li>
+        <li class="tl-item">
+          <div class="tl-head"><h3>Trợ giảng và chấm bài</h3><span class="when">08/2022 – nay</span></div>
+          <div class="tl-org">Khoa Khoa học Máy tính và Kỹ thuật Điện, UMBC</div>
+          <ul>
+            <li><strong>Trợ giảng</strong> (Thu 2022 – Xuân 2026): Xử lý ngôn ngữ tự nhiên (hai học kỳ), Thuật toán, Kiến trúc máy tính (đại học và sau đại học), Cơ sở dữ liệu, Trực quan hóa dữ liệu, Điện toán di động.</li>
+            <li>Hướng dẫn các buổi thực hành và thảo luận, tổ chức giờ hỗ trợ sinh viên, chấm bài tập và bài thi.</li>
+            <li><strong>Chấm bài</strong> (Thu 2026 – nay): Software Engineering I.</li>
+          </ul>
+        </li>
+        <li class="tl-item">
+          <div class="tl-head"><h3>Kỹ sư Dữ liệu lớn</h3><span class="when">05/2021 – 07/2022</span></div>
+          <div class="tl-org">Tập đoàn CMC · Hà Nội, Việt Nam</div>
+          <ul>
+            <li>Triển khai Random Walk with Restart trên biểu diễn đồ thị tri thức để tìm doanh nghiệp tương tự: chính xác hơn 2% và xếp hạng nhanh hơn 5%.</li>
+            <li>Tinh chỉnh các mô hình dựa trên BERT để trích xuất thông tin doanh nghiệp bằng NER (độ chính xác 85%).</li>
+            <li>Tinh chỉnh các mô hình dựa trên BERT để chuyển câu hỏi tiếng Việt sang SQL (độ chính xác 78%).</li>
+            <li>Sử dụng Neo4j, AmpliGraph và FAISS để lưu trữ, biểu diễn và tìm kiếm trên các đồ thị tri thức doanh nghiệp lớn.</li>
+          </ul>
+        </li>
+        <li class="tl-item">
+          <div class="tl-head"><h3>Trợ giảng bậc đại học</h3><span class="when">01/2019 – 2021</span></div>
+          <div class="tl-org">Đại học Villanova · Villanova, PA</div>
+          <ul>
+            <li>Chấm bài và góp ý cho sinh viên các môn CSC 1052 và CSC 2053; hỗ trợ sinh viên ngoài giờ học.</li>
+          </ul>
+        </li>
+        <li class="tl-item">
+          <div class="tl-head"><h3>Trợ lý nghiên cứu bậc đại học</h3><span class="when">06/2019 – 08/2019</span></div>
+          <div class="tl-org">Đại học Villanova · Villanova, PA</div>
+          <ul>
+            <li>Viết back end bằng Nest.js để gắn thẻ bài tập theo cấu trúc thẻ của Stack Overflow.</li>
+            <li>Soạn câu hỏi và bài khởi động cho trang học tập one-up (tăng 3% hiệu quả học tập).</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= HỌC VẤN ================= -->
+  <section id="education">
+    <div class="wrap">
+      <div class="sec-head"><h2>Học vấn</h2></div>
+      <ol class="timeline">
+        <li class="tl-item">
+          <div class="tl-head"><h3>Tiến sĩ Khoa học Máy tính</h3><span class="when">08/2022 – 12/2026 (dự kiến)</span></div>
+          <div class="tl-org">Đại học Maryland, Baltimore County · GPA 3,933/4,0</div>
+          <ul>
+            <li>Người hướng dẫn: GS. Tim Oates. Hội đồng: TS. Lara Martin, TS. Justin Brooks, TS. Manas Gaur, TS. Trung Vu.</li>
+            <li>Được công nhận ứng viên tiến sĩ tháng 2/2026. Dự kiến tốt nghiệp ngày 18/12/2026.</li>
+          </ul>
+        </li>
+        <li class="tl-item">
+          <div class="tl-head"><h3>Thạc sĩ Khoa học Máy tính</h3><span class="when">05/2026</span></div>
+          <div class="tl-org">Đại học Maryland, Baltimore County · Nhận trong quá trình học tiến sĩ</div>
+          <p class="small"><a href="#credentials">Bằng tốt nghiệp</a> · <a href="../assets/credentials/transcripts/UMBC_Graduate_Transcript.pdf" target="_blank" rel="noopener">Bảng điểm sau đại học (PDF)</a></p>
+        </li>
+        <li class="tl-item">
+          <div class="tl-head"><h3>Cử nhân Khoa học Máy tính, Magna Cum Laude</h3><span class="when">2017 – 05/2021</span></div>
+          <div class="tl-org">Đại học Villanova · GPA 3,81/4,0</div>
+          <p class="small"><a href="#credentials">Bằng tốt nghiệp</a> · <a href="../assets/credentials/transcripts/Villanova_Undergraduate_Transcript.pdf" target="_blank" rel="noopener">Bảng điểm đại học (PDF)</a></p>
+        </li>
+        <li class="tl-item">
+          <div class="tl-head"><h3>THPT chuyên Vật lý</h3><span class="when">2014 – 2017</span></div>
+          <div class="tl-org">Trường THPT chuyên Hà Nội – Amsterdam · Hà Nội, Việt Nam</div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= GIẢI THƯỞNG ================= -->
+  <section id="honors">
+    <div class="wrap">
+      <div class="sec-head"><h2>Giải thưởng &amp; thành tích</h2><span class="aside">Bấm vào giấy chứng nhận để phóng to</span></div>
+      <ul class="honors">
+        <li><time>2021</time><span><strong>Tốt nghiệp loại Magna Cum Laude</strong>, Cử nhân Khoa học Máy tính, Đại học Villanova.</span></li>
+        <li><time>10/2021</time><span>Chứng chỉ <strong>Bayesian Methods for Machine Learning</strong>, Đại học HSE (Coursera).</span></li>
+        <li><time>10/2020</time><span><strong>Giải Nhì</strong>, Cuộc thi Lập trình CCSC khu vực miền Đông Hoa Kỳ, Consortium for Computing Sciences in Colleges (đội “Team Wild” của Villanova cùng James Gamboli và Zachary DeStefano).</span></li>
+        <li><time>11/2019</time><span><strong>Giải Nhì</strong>, Cuộc thi Lập trình ICPC khu vực Mid-Atlantic Hoa Kỳ, điểm thi Đại học Wilkes (26 đội), cùng đội “Cats01” của Villanova.</span></li>
+        <li><time>10/2019</time><span><strong>Giải Nhì</strong>, Cuộc thi Lập trình CCSC khu vực miền Đông Hoa Kỳ.</span></li>
+        <li><time>2016</time><span><strong>Giải Khuyến khích môn Vật lý</strong>, Kỳ thi học sinh giỏi lớp 12 cấp Thành phố Hà Nội năm học 2016–2017, Trường THPT chuyên Hà Nội – Amsterdam.</span></li>
+        <li><time>2015</time><span><strong>Giải Ba môn Vật lý</strong>, Kỳ thi học sinh giỏi lớp 12 cấp Thành phố Hà Nội năm học 2015–2016 (khi đang học lớp 11).</span></li>
+        <li><time>2014</time><span><strong>Giải Nhì môn Vật lý cấp Thành phố</strong>, lớp 9, Trường THCS Đoàn Thị Điểm, Hà Nội.</span></li>
+      </ul>
+
+      <div class="gallery">
+        <figure class="tile">
+          <button data-full="../assets/credentials/awards/CCSC_Eastern_Programming_Contest_2nd_Place_2020_Team_Wild.jpg" data-caption="CCSC khu vực miền Đông 2020: Giải Nhì Cuộc thi Lập trình (đội Team Wild, Villanova)" aria-label="Phóng to giấy chứng nhận CCSC 2020">
+            <img src="../assets/credentials/awards/thumbs/CCSC_Eastern_Programming_Contest_2nd_Place_2020_Team_Wild.jpg" alt="Giấy chứng nhận Giải Nhì CCSC 2020" loading="lazy">
+          </button>
+          <figcaption class="cap"><strong>CCSC miền Đông 2020</strong>Giải Nhì Cuộc thi Lập trình</figcaption>
+        </figure>
+        <figure class="tile">
+          <button data-full="../assets/credentials/awards/ICPC_Mid_Atlantic_Wilkes_Site_2nd_Place.jpg" data-caption="ICPC khu vực Mid-Atlantic, điểm thi Đại học Wilkes: Giải Nhì (đội Cats01)" aria-label="Phóng to giấy chứng nhận ICPC">
+            <img src="../assets/credentials/awards/thumbs/ICPC_Mid_Atlantic_Wilkes_Site_2nd_Place.jpg" alt="Giấy chứng nhận Giải Nhì ICPC Mid-Atlantic" loading="lazy">
+          </button>
+          <figcaption class="cap"><strong>ICPC Mid-Atlantic 2019</strong>Giải Nhì, điểm thi Đại học Wilkes</figcaption>
+        </figure>
+        <figure class="tile">
+          <button data-full="../assets/credentials/awards/CCSC_Eastern_Programming_Contest_2nd_Place.jpg" data-caption="CCSC khu vực miền Đông: Giải Nhì Cuộc thi Lập trình" aria-label="Phóng to giấy chứng nhận CCSC 2019">
+            <img src="../assets/credentials/awards/thumbs/CCSC_Eastern_Programming_Contest_2nd_Place.jpg" alt="Giấy chứng nhận Giải Nhì CCSC" loading="lazy">
+          </button>
+          <figcaption class="cap"><strong>CCSC miền Đông 2019</strong>Giải Nhì Cuộc thi Lập trình</figcaption>
+        </figure>
+        <figure class="tile">
+          <button data-full="../assets/credentials/awards/Hanoi_City_Physics_Certificates_3rd_Prize_2016_Consolation_2017.jpg" data-caption="Chứng nhận của Sở GD&amp;ĐT Hà Nội: Giải Ba môn Vật lý (2015–2016) và Giải Khuyến khích môn Vật lý (2016–2017)" aria-label="Phóng to chứng nhận học sinh giỏi Vật lý">
+            <img src="../assets/credentials/awards/thumbs/Hanoi_City_Physics_Certificates_3rd_Prize_2016_Consolation_2017.jpg" alt="Chứng nhận học sinh giỏi Vật lý Thành phố Hà Nội" loading="lazy">
+          </button>
+          <figcaption class="cap"><strong>HSG Vật lý Hà Nội 2015–2017</strong>Giải Ba và Giải Khuyến khích</figcaption>
+        </figure>
+        <figure class="tile">
+          <button data-full="../assets/credentials/awards/Hanoi_City_Physics_Competition_3rd_Prize_2016_Giay_Khen.jpg" data-caption="Giấy khen: Giải Ba môn Vật lý, Kỳ thi học sinh giỏi Thành phố Hà Nội 2015–2016" aria-label="Phóng to giấy khen 2016">
+            <img src="../assets/credentials/awards/thumbs/Hanoi_City_Physics_Competition_3rd_Prize_2016_Giay_Khen.jpg" alt="Giấy khen Giải Ba môn Vật lý 2016" loading="lazy">
+          </button>
+          <figcaption class="cap"><strong>HSG Vật lý Hà Nội 2016</strong>Giấy khen, Giải Ba</figcaption>
+        </figure>
+        <figure class="tile">
+          <button data-full="../assets/credentials/awards/Hanoi_City_Physics_Competition_2nd_Prize_2014.jpg" data-caption="Giấy khen: Giải Nhì môn Vật lý cấp Thành phố, lớp 9 (2014)" aria-label="Phóng to giấy khen 2014">
+            <img src="../assets/credentials/awards/thumbs/Hanoi_City_Physics_Competition_2nd_Prize_2014.jpg" alt="Giấy khen Giải Nhì môn Vật lý 2014" loading="lazy">
+          </button>
+          <figcaption class="cap"><strong>HSG Vật lý Hà Nội 2014</strong>Giấy khen, Giải Nhì</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VĂN BẰNG ================= -->
+  <section id="credentials">
+    <div class="wrap">
+      <div class="sec-head"><h2>Văn bằng &amp; bảng điểm</h2></div>
+      <div class="gallery">
+        <figure class="tile">
+          <button data-full="../assets/credentials/diplomas/UMBC_MS_Computer_Science_Diploma_2026.jpg" data-caption="Đại học Maryland, Baltimore County: Bằng Thạc sĩ Khoa học Máy tính (2026)" aria-label="Phóng to bằng Thạc sĩ UMBC">
+            <img src="../assets/credentials/diplomas/thumbs/UMBC_MS_Computer_Science_Diploma_2026.jpg" alt="Bằng Thạc sĩ Khoa học Máy tính UMBC" loading="lazy">
+          </button>
+          <figcaption class="cap"><strong>Bằng Thạc sĩ, UMBC</strong>Khoa học Máy tính, 2026</figcaption>
+        </figure>
+        <figure class="tile">
+          <button data-full="../assets/credentials/diplomas/Villanova_BS_Computer_Science_Diploma_2021.jpg" data-caption="Đại học Villanova: Bằng Cử nhân, Magna Cum Laude (31/05/2021)" aria-label="Phóng to bằng Cử nhân Villanova">
+            <img src="../assets/credentials/diplomas/thumbs/Villanova_BS_Computer_Science_Diploma_2021.jpg" alt="Bằng Cử nhân Đại học Villanova" loading="lazy">
+          </button>
+          <figcaption class="cap"><strong>Bằng Cử nhân, Villanova</strong>Magna Cum Laude, 2021</figcaption>
+        </figure>
+        <figure class="tile">
+          <a class="thumb" href="../assets/credentials/transcripts/UMBC_Graduate_Transcript.pdf" target="_blank" rel="noopener" aria-label="Mở bảng điểm sau đại học UMBC (PDF)">
+            <img src="../assets/credentials/transcripts/thumbs/UMBC_Graduate_Transcript.jpg" alt="Trang đầu bảng điểm sau đại học UMBC" loading="lazy" style="object-position: top">
+          </a>
+          <figcaption class="cap"><strong>Bảng điểm sau đại học UMBC</strong>GPA 3,933/4,0 · PDF</figcaption>
+        </figure>
+        <figure class="tile">
+          <a class="thumb" href="../assets/credentials/transcripts/Villanova_Undergraduate_Transcript.pdf" target="_blank" rel="noopener" aria-label="Mở bảng điểm đại học Villanova (PDF)">
+            <img src="../assets/credentials/transcripts/thumbs/Villanova_Undergraduate_Transcript.jpg" alt="Trang đầu bảng điểm Đại học Villanova" loading="lazy" style="object-position: top">
+          </a>
+          <figcaption class="cap"><strong>Bảng điểm Villanova</strong>GPA 3,81/4,0 · PDF</figcaption>
+        </figure>
+      </div>
+      <p class="note">Mã số sinh viên, ngày sinh và địa chỉ nhà đã được che trên các bảng điểm đăng tải. Bản chính thức có thể cung cấp khi có yêu cầu.</p>
+    </div>
+  </section>
+
+  <!-- ================= KỸ NĂNG ================= -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="sec-head"><h2>Kỹ năng kỹ thuật</h2></div>
+      <dl class="skills card">
+        <dt>Ngôn ngữ lập trình</dt><dd>Python, C++, Java, SQL</dd>
+        <dt>Framework &amp; thư viện</dt><dd>PyTorch, Hugging Face Transformers, PEFT (LoRA), OpenCV, MONAI</dd>
+        <dt>Kỹ thuật ML / AI</dt><dd>Tinh chỉnh mô hình thị giác–ngôn ngữ, học tổ hợp sâu, prompting LLM, biểu diễn đồ thị tri thức</dd>
+        <dt>Mô hình</dt><dd>Qwen2.5-VL, InternVL3, TrOCR, RadBERT, GPT-4-Turbo</dd>
+        <dt>Công cụ &amp; hạ tầng</dt><dd>Cụm đa GPU SLURM, huấn luyện PyTorch phân tán, Git, LaTeX, Neo4j, AmpliGraph, FAISS</dd>
+      </dl>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong>Tạ Tùng Dương</strong> · CoRaL Lab, Khoa Khoa học Máy tính và Kỹ thuật Điện, UMBC, 1000 Hilltop Circle, Baltimore, MD 21250, Hoa Kỳ<br>
+      <a href="mailto:dta1@umbc.edu">dta1@umbc.edu</a> ·
+      <a href="https://scholar.google.com/citations?user=CQvMpEsAAAAJ&amp;hl=vi" target="_blank" rel="noopener">Google Scholar</a> ·
+      <a href="https://github.com/duongta155" target="_blank" rel="noopener">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/duong-ta-16a631162/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div>© <span id="year">2026</span> Tạ Tùng Dương · Cập nhật tháng 10/2026</div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Xem ảnh">
+  <button class="close" aria-label="Đóng">×</button>
+  <figure><img src="" alt=""><figcaption></figcaption></figure>
+</div>
+
+</body>
+</html>
