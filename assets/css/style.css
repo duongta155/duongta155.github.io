@@ -232,3 +232,18 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
 /* Language switch */
 .lang-btn { font-size: .78rem; font-weight: 700; letter-spacing: .03em; color: var(--text); text-decoration: none; }
 .lang-btn:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
+
+/* Keep nav labels on one line; Vietnamese labels are longer, so give the bar more room */
+.nav .wrap { max-width: 1240px; }
+.nav-links a { white-space: nowrap; }
+@media (min-width: 901px) and (max-width: 1180px) {
+  .nav-links a { padding: 6px 7px; font-size: .86rem; }
+}
+@media (max-width: 1120px) {
+  html[lang="vi"] .menu-btn { display: grid; margin-left: auto; }
+  html[lang="vi"] .nav-links {
+    display: none; position: absolute; top: 60px; left: 0; right: 0; flex-direction: column;
+    background: var(--surface); border-bottom: 1px solid var(--line); padding: 8px 16px 14px; box-shadow: var(--shadow);
+  }
+  html[lang="vi"] .nav-links.open { display: flex; }
+}
