@@ -229,68 +229,66 @@
       <div class="sec-head"><h2>Research projects</h2><span class="aside">CoRaL Lab, UMBC · 2023 to present</span></div>
       <div class="projects">
         <article class="card project">
-          <h3>MDEF: Multi-Report Deep Ensemble Fusion</h3>
-          <div class="meta">3D CT report generation · First author · ICDM 2026 workshop</div>
+          <h3>MDEF: Multi-Report Deep Ensemble Fusion for 3D CT Report Generation</h3>
+          <div class="meta">First author · LLM4MDF at ICDM 2026 · Accepted</div>
           <ul>
-            <li>Turned the single-report paradigm of 3D CT report generation into a multi-report deep ensemble.</li>
-            <li>Beat MARCH, the best single-report baseline, by +0.079 and +0.045 CE F1 on RadGenome and CT-RATE, with a small positive margin on INSPECT.</li>
-            <li>Raised recall by 70% to 97% relative to MARCH, averaged over 18 pathologies.</li>
+            <li>Proposed MDEF, a deep-ensemble pipeline that turns the single-report paradigm into a multi-report paradigm.</li>
+            <li>Outperformed MARCH, the best single-report baseline, by +0.079 and +0.045 CE F1 on RadGenome and CT-RATE, with a small positive margin on INSPECT.</li>
+            <li>Raised recall by +70% to +97% relative to MARCH, averaged over the 18 pathologies.</li>
           </ul>
           <div class="plinks"><a class="btn" href="https://github.com/duongta155/MDEF" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>Code</a></div>
         </article>
 
         <article class="card project">
           <h3>MDToC: Metacognitive Dynamic Tree of Concepts</h3>
-          <div class="meta">LLM mathematical reasoning · First author · ICT Research</div>
+          <div class="meta">First author · ICT Research · Published</div>
           <ul>
-            <li>Three-phase prompting built on the metacognitive stages of planning, monitoring, and reviewing.</li>
-            <li>Beat Graph of Thoughts by 5% on CHAMP, 5.4% on MATH, and 4% on Game of 24.</li>
-            <li>Beat Tree of Thoughts by up to 19% and Graph of Thoughts by up to 13% across backbone models.</li>
+            <li>Proposed MDToC, a three-phase prompting technique built on the metacognitive stages of planning, monitoring, and reviewing.</li>
+            <li>Outperformed GoT by 5% on CHAMP, 5.4% on MATH, and 4% on Game-of-24, three mathematical benchmarks.</li>
+            <li>Outperformed ToT by up to 19% and GoT by up to 13% across the backbone models.</li>
           </ul>
-          <div class="plinks">
-            <a class="btn" href="https://ictmag.ictvietnam.vn/ict/issue/view/109/33" target="_blank" rel="noopener"><svg><use href="#i-file"/></svg>Paper</a>
+          <div class="plinks"><a class="btn" href="https://ictmag.ictvietnam.vn/ict/issue/view/109/33" target="_blank" rel="noopener"><svg><use href="#i-file"/></svg>Paper</a>
             <a class="btn" href="https://github.com/duongta155/MDToC" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>Code</a>
-            <a class="btn" href="https://arxiv.org/abs/2512.18841" target="_blank" rel="noopener"><svg><use href="#i-file"/></svg>arXiv</a>
-          </div>
+            <a class="btn" href="https://arxiv.org/abs/2512.18841" target="_blank" rel="noopener"><svg><use href="#i-file"/></svg>arXiv</a></div>
         </article>
 
         <article class="card project">
-          <h3>ViTLD: Three-Level Vietnamese Handwriting Dataset</h3>
-          <div class="meta">Dataset · First author · In revision (WACV 2027)</div>
+          <h3>ViTLD: A Three-Level Vietnamese Handwriting Dataset from Photographed Pages</h3>
+          <div class="meta">First author · WACV 2027 · In revision</div>
           <ul>
-            <li>Built from 565 photographed pages by 435 writers: the first Vietnamese handwriting dataset with word, line, and paragraph labels on photographed paper.</li>
-            <li>Harder than VNOnDB and UIT-HWDB: average word-level CER of nine recognizers rises to 12.56 (from 7.32 and 9.39).</li>
-            <li>Harder at line level too: average CER of 22.57, versus 14.09 on VNOnDB and 16.91 on UIT-HWDB.</li>
+            <li>Built ViTLD from 565 paper images of 435 writers, the first Vietnamese handwriting dataset with word, line, and paragraph annotation on photographed papers.</li>
+            <li>Proved ViTLD harder than the two existing three-level datasets, VNOnDB and UIT-HWDB, raising the average word-level CER of nine handwriting recognition systems to 12.56 from 7.32 and 9.39.</li>
+            <li>Proved ViTLD harder at line level, raising the average CER to 22.57, from 14.09 on VNOnDB and 16.91 on UIT-HWDB.</li>
           </ul>
         </article>
 
         <article class="card project">
-          <h3>SIME: Stroke-Image Modality Ensemble</h3>
-          <div class="meta">Handwriting recognition with VLMs · First author · In revision</div>
+          <h3>PIKE: Patient-Context Informed Knowledge Graph Enrichment for ICU Outcome Prediction</h3>
+          <div class="meta">Contributing author · AAAI 2027 · Under review</div>
           <ul>
-            <li>Adds a stroke modality, reconstructed from the image by stroke derendering, to an ensemble of fine-tuned vision-language models.</li>
-            <li>Beat the strongest image-only ensemble on two out-of-distribution benchmarks, cutting CER by about 11% on VN-Para and 9% on VN-Addr.</li>
+            <li>Contributed to PIKE, built on Evidence-Guided Node Selection (EGNS) and Bidirectional Low-Rank Fusion (BLRF).</li>
+            <li>Outperformed the strongest baseline by 2.2 to 4.0 AUROC points in each setting on MIMIC-III and MIMIC-IV.</li>
+            <li>Improved AUPRC by up to 6.9 points over CTPD, the strongest baseline on MIMIC-IV mortality.</li>
+          </ul>
+        </article>
+
+        <article class="card project">
+          <h3>SIME: A Stroke-Image Modality Ensemble in Word-Level Vietnamese Handwriting Recognition</h3>
+          <div class="meta">First author · In revision for resubmission</div>
+          <ul>
+            <li>Proposed SIME, which adds the stroke modality, reconstructed from the image by stroke derendering, to an ensemble of fine-tuned VLMs.</li>
+            <li>Outperformed the strongest image modality ensemble on two out-of-distribution benchmarks, reducing CER by about 11% on VN-Para and 9% on VN-Addr.</li>
             <li>Released VN-Para, a diacritic-rich word-level benchmark of 8,042 handwritten word images from 100 documents.</li>
           </ul>
         </article>
 
         <article class="card project">
-          <h3>PIKE: Knowledge Graph Enrichment for ICU Outcomes</h3>
-          <div class="meta">Medical AI · Contributing author · Under review at AAAI 2027</div>
+          <h3>Hierarchical Native-Coordinate Raman Classification of Skin Lesions</h3>
+          <div class="meta">Contributing author (data curation, supervision, resources) · Skin Research and Technology · Under review</div>
           <ul>
-            <li>Built on Evidence-Guided Node Selection (EGNS) and Bidirectional Low-Rank Fusion (BLRF).</li>
-            <li>Beat the strongest baseline by 2.2 to 4.0 AUROC points in each setting on MIMIC-III and MIMIC-IV.</li>
-            <li>Improved AUPRC by up to 6.9 points over CTPD on MIMIC-IV mortality.</li>
-          </ul>
-        </article>
-
-        <article class="card project">
-          <h3>Raman Classification of Skin Lesions</h3>
-          <div class="meta">Raman spectroscopy · Contributing author · Under review at Skin Research and Technology</div>
-          <ul>
-            <li>H-QFR: a hierarchical classifier (benign vs. malignant, then BCC vs. melanoma) that learns directly on the native, nonuniform Raman wavenumber grid instead of resampling it.</li>
-            <li>Provenance-aware validation with source-family grouped splits (10 repeats of 5-fold outer, 3-fold inner) to prevent leakage between related spectra.</li>
-            <li>82.87% repeat-level balanced accuracy and 83.59% overall accuracy, +1.49 points over the inner-selected baseline.</li>
+            <li>Contributed to H-QFR, a hierarchical classifier (benign vs. malignant, then BCC vs. melanoma) that learns directly on the native, nonuniform Raman wavenumber grid instead of resampling to an artificial uniform axis.</li>
+            <li>Evaluated with a provenance-aware validation protocol using source-family grouped splits (ten repeats of five-fold outer, three-fold inner) to prevent leakage between related spectra.</li>
+            <li>Reached 82.87% repeat-level balanced accuracy and 83.59% overall accuracy on BCC, benign, and melanoma spectra, +1.49 points over the inner-selected baseline.</li>
           </ul>
         </article>
 
@@ -358,9 +356,9 @@
           <div class="tl-head"><h3>Big Data Engineer</h3><span class="when">May 2021 – Jul 2022</span></div>
           <div class="tl-org">CMC Corporation · Hanoi, Vietnam</div>
           <ul>
-            <li>Implemented Random Walk with Restart on knowledge graph embeddings for company similarity search: 2% higher accuracy and 5% faster ranking.</li>
+            <li>Implemented Random Walk with Restart on knowledge graph embeddings for company similarity search, with 2% higher accuracy and 5% faster ranking.</li>
             <li>Fine-tuned BERT-based models for NER-based business information extraction (85% accuracy).</li>
-            <li>Fine-tuned BERT-based models for Vietnamese natural-language-to-SQL conversion (78% accuracy).</li>
+            <li>Fine-tuned BERT-based models for Vietnamese natural language-to-SQL conversion (78% accuracy).</li>
             <li>Worked with Neo4j, AmpliGraph, and FAISS to store, embed, and search large company knowledge graphs.</li>
           </ul>
         </li>
