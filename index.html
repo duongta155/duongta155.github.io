@@ -288,9 +288,9 @@
           <h3>Raman Classification of Skin Lesions</h3>
           <div class="meta">Raman spectroscopy · Contributing author · Under review at Skin Research and Technology</div>
           <ul>
-            <li>H-QFR: a hierarchical functional classifier for basal cell carcinoma, benign, and melanoma Raman spectra on their native, nonuniform wavenumber grid.</li>
-            <li>Provenance-aware grouped validation (10 repeats of 5-fold outer, 3-fold inner): 82.87% repeat-level balanced accuracy versus 81.38% for the inner-selected baseline.</li>
-            <li>Reported as a reproducible negative-result benchmark rather than a claim of diagnostic superiority.</li>
+            <li>H-QFR: a hierarchical classifier (benign vs. malignant, then BCC vs. melanoma) that learns directly on the native, nonuniform Raman wavenumber grid instead of resampling it.</li>
+            <li>Provenance-aware validation with source-family grouped splits (10 repeats of 5-fold outer, 3-fold inner) to prevent leakage between related spectra.</li>
+            <li>82.87% repeat-level balanced accuracy and 83.59% overall accuracy, +1.49 points over the inner-selected baseline.</li>
           </ul>
         </article>
 
