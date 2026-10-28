@@ -230,68 +230,66 @@
       <div class="sec-head"><h2>Dự án nghiên cứu</h2><span class="aside">CoRaL Lab, UMBC · 2023 đến nay</span></div>
       <div class="projects">
         <article class="card project">
-          <h3>MDEF: Hợp nhất tổ hợp sâu đa báo cáo</h3>
-          <div class="meta">Sinh báo cáo CT 3D · Tác giả chính · Workshop ICDM 2026</div>
+          <h3>MDEF: Multi-Report Deep Ensemble Fusion for 3D CT Report Generation</h3>
+          <div class="meta">Tác giả chính · LLM4MDF tại ICDM 2026 · Đã chấp nhận</div>
           <ul>
-            <li>Chuyển mô hình sinh một báo cáo duy nhất cho ảnh CT 3D thành tổ hợp sâu sinh nhiều báo cáo.</li>
-            <li>Vượt MARCH, phương pháp sinh một báo cáo tốt nhất, +0,079 và +0,045 CE F1 trên RadGenome và CT-RATE, và nhỉnh hơn trên INSPECT.</li>
-            <li>Tăng độ phủ (recall) 70% đến 97% so với MARCH, tính trung bình trên 18 bệnh lý.</li>
+            <li>Đề xuất MDEF, một quy trình tổ hợp sâu chuyển mô hình sinh một báo cáo thành mô hình sinh nhiều báo cáo.</li>
+            <li>Vượt MARCH, phương pháp sinh một báo cáo tốt nhất, +0,079 và +0,045 CE F1 trên RadGenome và CT-RATE, và nhỉnh hơn một chút trên INSPECT.</li>
+            <li>Tăng độ phủ (recall) từ +70% đến +97% so với MARCH, tính trung bình trên 18 bệnh lý.</li>
           </ul>
           <div class="plinks"><a class="btn" href="https://github.com/duongta155/MDEF" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>Mã nguồn</a></div>
         </article>
 
         <article class="card project">
-          <h3>MDToC: Cây khái niệm động siêu nhận thức</h3>
-          <div class="meta">Suy luận toán học của LLM · Tác giả chính · ICT Research</div>
+          <h3>MDToC: Metacognitive Dynamic Tree of Concepts</h3>
+          <div class="meta">Tác giả chính · ICT Research · Đã xuất bản</div>
           <ul>
-            <li>Kỹ thuật prompting ba giai đoạn dựa trên các bước siêu nhận thức: lập kế hoạch, giám sát và rà soát.</li>
-            <li>Vượt Graph of Thoughts 5% trên CHAMP, 5,4% trên MATH và 4% trên Game of 24.</li>
-            <li>Vượt Tree of Thoughts tới 19% và Graph of Thoughts tới 13% trên các mô hình nền khác nhau.</li>
+            <li>Đề xuất MDToC, kỹ thuật prompting ba giai đoạn dựa trên các bước siêu nhận thức: lập kế hoạch, giám sát và rà soát.</li>
+            <li>Vượt GoT 5% trên CHAMP, 5,4% trên MATH và 4% trên Game-of-24, ba bộ đánh giá toán học.</li>
+            <li>Vượt ToT tới 19% và GoT tới 13% trên các mô hình nền.</li>
           </ul>
-          <div class="plinks">
-            <a class="btn" href="https://ictmag.ictvietnam.vn/ict/issue/view/109/33" target="_blank" rel="noopener"><svg><use href="#i-file"/></svg>Bài báo</a>
+          <div class="plinks"><a class="btn" href="https://ictmag.ictvietnam.vn/ict/issue/view/109/33" target="_blank" rel="noopener"><svg><use href="#i-file"/></svg>Bài báo</a>
             <a class="btn" href="https://github.com/duongta155/MDToC" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>Mã nguồn</a>
-            <a class="btn" href="https://arxiv.org/abs/2512.18841" target="_blank" rel="noopener"><svg><use href="#i-file"/></svg>arXiv</a>
-          </div>
+            <a class="btn" href="https://arxiv.org/abs/2512.18841" target="_blank" rel="noopener"><svg><use href="#i-file"/></svg>arXiv</a></div>
         </article>
 
         <article class="card project">
-          <h3>ViTLD: Bộ dữ liệu chữ viết tay tiếng Việt ba cấp độ</h3>
-          <div class="meta">Bộ dữ liệu · Tác giả chính · Đang chỉnh sửa (WACV 2027)</div>
+          <h3>ViTLD: A Three-Level Vietnamese Handwriting Dataset from Photographed Pages</h3>
+          <div class="meta">Tác giả chính · WACV 2027 · Đang chỉnh sửa</div>
           <ul>
-            <li>Gồm 565 trang giấy chụp ảnh của 435 người viết: bộ dữ liệu chữ viết tay tiếng Việt đầu tiên có nhãn cấp từ, dòng và đoạn trên trang giấy chụp ảnh.</li>
-            <li>Khó hơn VNOnDB và UIT-HWDB: CER trung bình cấp từ của chín hệ nhận dạng tăng lên 12,56 (so với 7,32 và 9,39).</li>
-            <li>Khó hơn ở cấp dòng: CER trung bình 22,57, so với 14,09 trên VNOnDB và 16,91 trên UIT-HWDB.</li>
+            <li>Xây dựng ViTLD từ 565 ảnh trang giấy của 435 người viết, bộ dữ liệu chữ viết tay tiếng Việt đầu tiên có nhãn cấp từ, dòng và đoạn trên trang giấy chụp ảnh.</li>
+            <li>Chứng minh ViTLD khó hơn hai bộ dữ liệu ba cấp độ hiện có là VNOnDB và UIT-HWDB, nâng CER trung bình cấp từ của chín hệ nhận dạng chữ viết tay lên 12,56 từ 7,32 và 9,39.</li>
+            <li>Chứng minh ViTLD khó hơn ở cấp dòng, nâng CER trung bình lên 22,57, so với 14,09 trên VNOnDB và 16,91 trên UIT-HWDB.</li>
           </ul>
         </article>
 
         <article class="card project">
-          <h3>SIME: Tổ hợp hai phương thức nét bút và ảnh</h3>
-          <div class="meta">Nhận dạng chữ viết tay bằng VLM · Tác giả chính · Đang chỉnh sửa</div>
+          <h3>PIKE: Patient-Context Informed Knowledge Graph Enrichment for ICU Outcome Prediction</h3>
+          <div class="meta">Đồng tác giả · AAAI 2027 · Đang phản biện</div>
           <ul>
-            <li>Bổ sung phương thức nét bút, được tái tạo từ ảnh bằng kỹ thuật stroke derendering, vào tổ hợp các mô hình thị giác–ngôn ngữ đã tinh chỉnh.</li>
-            <li>Vượt tổ hợp chỉ dùng ảnh mạnh nhất trên hai bộ kiểm thử ngoài phân phối, giảm CER khoảng 11% trên VN-Para và 9% trên VN-Addr.</li>
+            <li>Tham gia phát triển PIKE, xây dựng trên Evidence-Guided Node Selection (EGNS) và Bidirectional Low-Rank Fusion (BLRF).</li>
+            <li>Vượt phương pháp cơ sở mạnh nhất 2,2 đến 4,0 điểm AUROC ở mọi thiết lập trên MIMIC-III và MIMIC-IV.</li>
+            <li>Cải thiện AUPRC tới 6,9 điểm so với CTPD, phương pháp cơ sở mạnh nhất trên bài toán tử vong MIMIC-IV.</li>
+          </ul>
+        </article>
+
+        <article class="card project">
+          <h3>SIME: A Stroke-Image Modality Ensemble in Word-Level Vietnamese Handwriting Recognition</h3>
+          <div class="meta">Tác giả chính · Đang chỉnh sửa để nộp lại</div>
+          <ul>
+            <li>Đề xuất SIME, bổ sung phương thức nét bút, được tái tạo từ ảnh bằng stroke derendering, vào tổ hợp các VLM đã tinh chỉnh.</li>
+            <li>Vượt tổ hợp phương thức ảnh mạnh nhất trên hai bộ đánh giá ngoài phân phối, giảm CER khoảng 11% trên VN-Para và 9% trên VN-Addr.</li>
             <li>Công bố VN-Para, bộ đánh giá cấp từ giàu dấu thanh gồm 8.042 ảnh từ viết tay từ 100 văn bản.</li>
           </ul>
         </article>
 
         <article class="card project">
-          <h3>PIKE: Làm giàu đồ thị tri thức cho dự đoán ICU</h3>
-          <div class="meta">AI y tế · Đồng tác giả · Đang phản biện tại AAAI 2027</div>
+          <h3>Hierarchical Native-Coordinate Raman Classification of Skin Lesions</h3>
+          <div class="meta">Đồng tác giả (quản lý dữ liệu, giám sát, cung cấp nguồn lực) · Skin Research and Technology · Đang phản biện</div>
           <ul>
-            <li>Xây dựng trên Evidence-Guided Node Selection (EGNS) và Bidirectional Low-Rank Fusion (BLRF).</li>
-            <li>Vượt phương pháp cơ sở mạnh nhất 2,2 đến 4,0 điểm AUROC ở mọi thiết lập trên MIMIC-III và MIMIC-IV.</li>
-            <li>Cải thiện AUPRC tới 6,9 điểm so với CTPD trên bài toán tử vong MIMIC-IV.</li>
-          </ul>
-        </article>
-
-        <article class="card project">
-          <h3>Phân loại tổn thương da bằng quang phổ Raman</h3>
-          <div class="meta">Quang phổ Raman · Đồng tác giả · Đang phản biện tại Skin Research and Technology</div>
-          <ul>
-            <li>H-QFR: bộ phân loại phân cấp (lành tính / ác tính, rồi ung thư biểu mô tế bào đáy / u hắc tố) học trực tiếp trên lưới số sóng Raman gốc không đều thay vì nội suy lại.</li>
-            <li>Quy trình kiểm định có xét nguồn gốc dữ liệu với phân chia theo nhóm nguồn (10 lần lặp, 5 fold ngoài, 3 fold trong) để tránh rò rỉ giữa các phổ liên quan.</li>
-            <li>Độ chính xác cân bằng 82,87% và độ chính xác tổng thể 83,59%, cao hơn 1,49 điểm so với phương pháp cơ sở được chọn ở vòng trong.</li>
+            <li>Tham gia phát triển H-QFR, bộ phân loại phân cấp (lành tính / ác tính, rồi BCC / u hắc tố) học trực tiếp trên lưới số sóng Raman gốc không đều thay vì nội suy về một trục đều nhân tạo.</li>
+            <li>Đánh giá bằng quy trình kiểm định có xét nguồn gốc dữ liệu, phân chia theo nhóm nguồn (10 lần lặp, 5 fold ngoài, 3 fold trong) để tránh rò rỉ giữa các phổ liên quan.</li>
+            <li>Đạt độ chính xác cân bằng 82,87% (theo lần lặp) và độ chính xác tổng thể 83,59% trên phổ BCC, lành tính và u hắc tố, cao hơn 1,49 điểm so với phương pháp cơ sở được chọn ở vòng trong.</li>
           </ul>
         </article>
 
