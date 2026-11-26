@@ -247,3 +247,6 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
   }
   html[lang="vi"] .nav-links.open { display: flex; }
 }
+
+/* A lone last project card spans the full row instead of leaving a gap */
+.projects > .card:last-child:nth-child(odd) { grid-column: 1 / -1; }
